@@ -113,9 +113,9 @@ xkb_keymap {
 		<COMP> = 135;
 		<I232> = 232;
 		<I233> = 233;
-		indicator 1 = "Caps Lock";
-		indicator 2 = "Num Lock";
-		indicator 3 = "Scroll Lock";
+		indicator 1 = "LED1";
+		indicator 2 = "LED2";
+		indicator 3 = "LED3";
 	};
 	xkb_compat {
 		interpret Shift_L {
