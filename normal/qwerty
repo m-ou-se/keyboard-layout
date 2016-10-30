@@ -1,4 +1,5 @@
 xkb_keymap {
+
 	xkb_keycodes {
 		minimum = 8;
 		maximum = 255;
@@ -117,6 +118,7 @@ xkb_keymap {
 		indicator 2 = "LED2";
 		indicator 3 = "LED3";
 	};
+
 	xkb_compat {
 		interpret Shift_L {
 			action = SetMods(modifiers=Shift);
@@ -219,7 +221,6 @@ xkb_keymap {
 			level_name[Level1] = "Base";
 		};
 	};
-
 
 	xkb_symbols {
 		key  <ESC> { [ Escape ] };
