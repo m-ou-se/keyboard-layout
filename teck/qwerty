@@ -176,10 +176,12 @@ xkb_keymap {
 			level_name[Level1] = "Base";
 		};
 		type "TWO_LEVEL" {
-			modifiers = Mod5;
+			modifiers = Shift + Mod5;
+			map[Shift] = Level2;
 			map[Mod5] = Level2;
+			map[Shift+Mod5] = Level2;
 			level_name[Level1] = "Base";
-			level_name[Level2] = "Symbol";
+			level_name[Level2] = "Shift";
 		};
 		type "ALPHABETIC" {
 			modifiers = Shift + Lock;
@@ -188,18 +190,29 @@ xkb_keymap {
 			level_name[Level1] = "Base";
 			level_name[Level2] = "Caps";
 		};
+		type "FOUR_LEVEL" {
+			modifiers= Shift+Mod5;
+			map[Shift]= Level2;
+			map[Mod5]= Level3;
+			map[Shift+Mod5]= Level4;
+			level_name[Level1]= "Base";
+			level_name[Level2]= "Shift";
+			level_name[Level3]= "Symbol";
+			level_name[Level4]= "Symbol2";
+		};
 		type "FOUR_LEVEL_SEMIALPHABETIC" {
 			modifiers = Shift + Lock + Mod5;
 			map[Shift] = Level2;
 			map[Lock] = Level2;
 			map[Lock+Shift] = Level1;
 			map[Mod5] = Level3;
-			map[Shift+Mod5] = Level3;
+			map[Shift+Mod5] = Level4;
 			map[Lock+Mod5] = Level3;
-			map[Lock+Shift+Mod5] = Level3;
+			map[Lock+Shift+Mod5] = Level4;
 			level_name[Level1] = "Base";
 			level_name[Level2] = "Caps";
 			level_name[Level3] = "Symbol";
+			level_name[Level4]= "Symbol2";
 		};
 		type "KEYPAD" {
 			modifiers = None;
@@ -212,49 +225,52 @@ xkb_keymap {
 		//};
 	};
 	xkb_symbols  {
-		key <A1> { [ 1                      ] };
-		key <A2> { [ 2                      ] };
-		key <A3> { [ 3                      ] };
-		key <A4> { [ 4                      ] };
-		key <A5> { [ 5                      ] };
-		key <A6> { [ 6                      ] };
-		key <A7> { [ 7                      ] };
-		key <A8> { [ 8                      ] };
-		key <A9> { [ 9                      ] };
-		key <A0> { [ 0                      ] };
+		key <A1> { [ 1, exclam      ] };
+		key <A2> { [ 2, at          ] };
+		key <A3> { [ 3, numbersign  ] };
+		key <A4> { [ 4, dollar      ] };
+		key <A5> { [ 5, percent     ] };
+		key <A6> { [ 6, asciicircum ] };
+		key <A7> { [ 7, ampersand   ] };
+		key <A8> { [ 8, asterisk    ] };
+		key <A9> { [ 9, parenleft   ] };
+		key <A0> { [ 0, parenright  ] };
 
-		key <B1> { [ q, Q    , asterisk     ] };
-		key <B2> { [ w, W    , plus         ] };
-		key <B3> { [ e, E    , minus        ] };
-		key <B4> { [ r, R    , slash        ] };
-		key <B5> { [ t, T    , percent      ] };
-		key <B6> { [ y, Y    , dollar       ] };
-		key <B7> { [ u, U    , numbersign   ] };
-		key <B8> { [ i, I    , equal        ] };
-		key <B9> { [ o, O    , at           ] };
-		key <B0> { [ p, P    , apostrophe   ] };
+		key <B1> { [ q, Q, asterisk     ] };
+		key <B2> { [ w, W, plus         ] };
+		key <B3> { [ e, E, minus        ] };
+		key <B4> { [ r, R, slash        ] };
+		key <B5> { [ t, T, percent      ] };
+		key <B6> { [ y, Y, dollar       ] };
+		key <B7> { [ u, U, numbersign   ] };
+		key <B8> { [ i, I, equal        ] };
+		key <B9> { [ o, O, at           ] };
+		key <B0> { [ p, P, apostrophe   ] };
 
-		key <C1> { [ a, A    , parenleft    ] };
-		key <C2> { [ s, S    , less         ] };
-		key <C3> { [ d, D    , greater      ] };
-		key <C4> { [ f, F    , parenright   ] };
-		key <C5> { [ g, G    , backslash    ] };
-		key <C6> { [ h, H    , question     ] };
-		key <C7> { [ j, J    , braceleft    ] };
-		key <C8> { [ k, K    , bracketleft  ] };
-		key <C9> { [ l, L    , bracketright ] };
-		key <C0> { [ quotedbl, braceright   ] };
+		key <BR>  { [ apostrophe, quotedbl ] };
+		key <BRR> { [ backslash, bar ] };
 
-		key <D1> { [ z, Z    , grave        ] };
-		key <D2> { [ x, X    , asciitilde   ] };
-		key <D3> { [ c, C    , bar          ] };
-		key <D4> { [ v, V    , ampersand    ] };
-		key <D5> { [ b, B    , asciicircum  ] };
-		key <D6> { [ n, N    , exclam       ] };
-		key <D7> { [ m, M    , underscore   ] };
-		key <D8> { [ comma                  ] };
-		key <D9> { [ period                 ] };
-		key <D0> { [ colon   , semicolon    ] };
+		key <C1> { [ a, A, parenleft    ] };
+		key <C2> { [ s, S, less         ] };
+		key <C3> { [ d, D, greater      ] };
+		key <C4> { [ f, F, parenright   ] };
+		key <C5> { [ g, G, backslash    ] };
+		key <C6> { [ h, H, question     ] };
+		key <C7> { [ j, J, braceleft    ] };
+		key <C8> { [ k, K, bracketleft  ] };
+		key <C9> { [ l, L, bracketright ] };
+		key <C0> { [ semicolon, colon, braceright ] };
+
+		key <D1> { [ z, Z, grave        ] };
+		key <D2> { [ x, X, asciitilde   ] };
+		key <D3> { [ c, C, bar          ] };
+		key <D4> { [ v, V, ampersand    ] };
+		key <D5> { [ b, B, asciicircum  ] };
+		key <D6> { [ n, N, exclam       ] };
+		key <D7> { [ m, M, underscore   ] };
+		key <D8> { [ comma, less ] };
+		key <D9> { [ period, greater ] };
+		key <D0> { [ slash, question, quotedbl ] };
 
 		// delete
 		// pause/break
@@ -278,8 +294,6 @@ xkb_keymap {
 
 		key <BLL> { [ ] };
 		key <BL>  { [ Tab ] };
-		key <BR>  { [ ] };
-		key <BRR> { [ ] };
 
 		key <CL> { [ BackSpace,  Escape ] };
 		key <CR> { [ Control_R ] };
@@ -287,7 +301,7 @@ xkb_keymap {
 		key <DL> { [ Shift_L ] };
 		key <DR> { [ Shift_R ] };
 
-		key <ELL> { [           ] };
+		key <ELL> { [ Control_L ] };
 		key <EL>  { [ Alt_L     ] };
 		key <ER>  { [ Alt_R     ] };
 		key <ERR> { [ Super_R   ] };
