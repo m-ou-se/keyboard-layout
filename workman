@@ -239,7 +239,7 @@ xkb_keymap {
 		key <C3> { [ h, H    , greater      ] };
 		key <C4> { [ t, T    , parenright   ] };
 		key <C5> { [ g, G    , backslash    ] };
-		key <C6> { [ y, Y    , exclam       ] };
+		key <C6> { [ y, Y    , question     ] };
 		key <C7> { [ n, N    , braceleft    ] };
 		key <C8> { [ e, E    , bracketleft  ] };
 		key <C9> { [ o, O    , bracketright ] };
@@ -250,7 +250,7 @@ xkb_keymap {
 		key <D3> { [ m, M    , bar          ] };
 		key <D4> { [ c, C    , ampersand    ] };
 		key <D5> { [ v, V    , asciicircum  ] };
-		key <D6> { [ j, J    , question     ] };
+		key <D6> { [ j, J    , exclam       ] };
 		key <D7> { [ l, L    , underscore   ] };
 		key <D8> { [ comma                  ] };
 		key <D9> { [ period                 ] };
