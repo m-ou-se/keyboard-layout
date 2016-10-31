@@ -225,6 +225,9 @@ xkb_keymap {
 		//};
 	};
 	xkb_symbols  {
+		key <ALL> { [ ] };
+		key <AL> { [ grave, asciitilde ] };
+
 		key <A1> { [ 1, exclam      ] };
 		key <A2> { [ 2, at          ] };
 		key <A3> { [ 3, numbersign  ] };
@@ -235,6 +238,9 @@ xkb_keymap {
 		key <A8> { [ 8, asterisk    ] };
 		key <A9> { [ 9, parenleft   ] };
 		key <A0> { [ 0, parenright  ] };
+
+		key <AR> { [ minus, underscore ] };
+		key <ARR> { [ equal, plus ] };
 
 		key <B1> { [ q, Q, asterisk     ] };
 		key <B2> { [ w, W, plus         ] };
@@ -247,7 +253,7 @@ xkb_keymap {
 		key <B9> { [ o, O, at           ] };
 		key <B0> { [ p, P, apostrophe   ] };
 
-		key <BR>  { [ apostrophe, quotedbl ] };
+		key <BR> { [ apostrophe, quotedbl ] };
 		key <BRR> { [ backslash, bar ] };
 
 		key <C1> { [ a, A, parenleft    ] };
@@ -287,15 +293,10 @@ xkb_keymap {
 		key <DC> { [ Super_L   ] };
 		key <EC> { [ Return    ] };
 
-		key <ALL> { [ ] };
-		key <AL>  { [ ] };
-		key <AR>  { [ ] };
-		key <ARR> { [ ] };
-
 		key <BLL> { [ ] };
 		key <BL>  { [ Tab ] };
 
-		key <CL> { [ BackSpace,  Escape ] };
+		key <CL> { [ BackSpace,  BackSpace, Escape, Escape ] };
 		key <CR> { [ Control_R ] };
 
 		key <DL> { [ Shift_L ] };
@@ -306,7 +307,7 @@ xkb_keymap {
 		key <ER>  { [ Alt_R     ] };
 		key <ERR> { [ Super_R   ] };
 
-		key <SL> { [ space, Return ] };
+		key <SL> { [ space, space, Return, Return ] };
 		key <SR> { [ Mode_switch ] };
 
 		key <LU> { [ Page_Up   ] };
@@ -334,5 +335,9 @@ xkb_keymap {
 		key <F11> { [ XF86AudioLowerVolume, F11    ] };
 		key <F12> { [ XF86AudioRaiseVolume, F12    ] };
 		key <F13> { [ Insert ] };
+
+		modifier_map Shift { <DL>, <DR> };
+		modifier_map Mod1 { <EL>, <ER> };
+		modifier_map Mod5 { <SR> };
 	};
 };
