@@ -295,9 +295,9 @@ xkb_keymap {
 		key <AB09> { [ period, greater    ] };
 		key <AB10> { [ slash, question    ] };
 
-		key <CAPS> { [ BackSpace, Escape ] };
+		key <CAPS> { [ BackSpace, BackSpace, Escape, Escape ] };
 
-		key <SPCE> { [ space, Return ] };
+		key <SPCE> { [ space, space, Return, Return ] };
 
 		key <KPAD> { [ KP_Add      ] };
 		key <KPSU> { [ KP_Subtract ] };
