@@ -153,7 +153,7 @@ xkb_keymap {
 		};
 
 		interpret Num_Lock {
-			action = LockMods(modifiers=Mod3);
+			action = LockMods(modifiers=Mod2);
 		};
 
 		interpret Mode_switch {
