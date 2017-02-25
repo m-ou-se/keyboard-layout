@@ -251,7 +251,7 @@ xkb_keymap {
 		key <B7> { [ u, U, numbersign   ] };
 		key <B8> { [ i, I, equal        ] };
 		key <B9> { [ o, O, at           ] };
-		key <B0> { [ p, P, apostrophe   ] };
+		key <B0> { [ p, P, quotedbl     ] };
 
 		key <BR> { [ apostrophe, quotedbl ] };
 		key <BRR> { [ backslash, bar ] };
@@ -274,9 +274,9 @@ xkb_keymap {
 		key <D5> { [ b, B, asciicircum  ] };
 		key <D6> { [ n, N, exclam       ] };
 		key <D7> { [ m, M, underscore   ] };
-		key <D8> { [ comma, less ] };
-		key <D9> { [ period, greater ] };
-		key <D0> { [ slash, question, quotedbl ] };
+		key <D8> { [ comma, less, semicolon ] };
+		key <D9> { [ period, greater, colon ] };
+		key <D0> { [ slash, question, apostrophe ] };
 
 		// delete
 		// pause/break

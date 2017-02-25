@@ -252,9 +252,9 @@ xkb_keymap {
 		key <D5> { [ v, V    , asciicircum  ] };
 		key <D6> { [ j, J    , exclam       ] };
 		key <D7> { [ l, L    , underscore   ] };
-		key <D8> { [ comma                  ] };
-		key <D9> { [ period                 ] };
-		key <D0> { [ colon   , semicolon    ] };
+		key <D8> { [ comma   , semicolon    ] };
+		key <D9> { [ period  , colon        ] };
+		key <D0> { [ slash   , question     ] };
 
 		// delete
 		// pause/break
