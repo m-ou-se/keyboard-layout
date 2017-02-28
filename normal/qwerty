@@ -361,8 +361,8 @@ xkb_keymap {
 
 		modifier_map Control { <LCTL>, <COMP> };
 		modifier_map Shift { <LFSH>, <RTSH> };
-		modifier_map Mod1  { <LALT>, <RCTL>, <META> };
-		modifier_map Mod5  { <RALT> };
+		modifier_map Mod1 { <LALT>, <RCTL>, <META> };
+		modifier_map Mod5 { <RALT> };
 	};
 
 };
