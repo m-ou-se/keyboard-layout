@@ -117,6 +117,8 @@ xkb_keymap {
 		<RD> = 116;
 		<RL> = 113;
 		<RR> = 114;
+
+		<META> = 205;
 	};
 	xkb_compat {
 		interpret Shift_L {
@@ -336,8 +338,11 @@ xkb_keymap {
 		key <F12> { [ XF86AudioRaiseVolume, F12    ] };
 		key <F13> { [ Insert ] };
 
+		key <META> { [ Meta_L ] };
+
+		modifier_map Control { <ELL>, <CR> };
 		modifier_map Shift { <DL>, <DR> };
-		modifier_map Mod1 { <EL>, <ER> };
+		modifier_map Mod1 { <EL>, <ER>, <META> };
 		modifier_map Mod5 { <SR> };
 	};
 };
