@@ -33,7 +33,7 @@ xkb_keymap {
 		<F10> = 76;
 		<F11> = 95;
 		<F12> = 96;
-		<F13> = 191;
+		<F13> = 118;
 
 		<X1> = 66;
 		<X2> = 78;
@@ -271,8 +271,8 @@ xkb_keymap {
 
 		key <D1> { [ z, Z, grave        ] };
 		key <D2> { [ x, X, asciitilde   ] };
-		key <D3> { [ c, C, bar          ] };
-		key <D4> { [ v, V, ampersand    ] };
+		key <D3> { [ c, C, ampersand    ] };
+		key <D4> { [ v, V, bar          ] };
 		key <D5> { [ b, B, asciicircum  ] };
 		key <D6> { [ n, N, exclam       ] };
 		key <D7> { [ m, M, underscore   ] };
@@ -336,7 +336,7 @@ xkb_keymap {
 		key <F10> { [ XF86AudioMute       , F10    ] };
 		key <F11> { [ XF86AudioLowerVolume, F11    ] };
 		key <F12> { [ XF86AudioRaiseVolume, F12    ] };
-		key <F13> { [ Insert ] };
+		key <F13> { [ Delete ] };
 
 		key <META> { [ Meta_L ] };
 
