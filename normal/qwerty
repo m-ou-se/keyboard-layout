@@ -264,7 +264,7 @@ xkb_keymap {
 		key <AD07> { [ u, U, numbersign   ] };
 		key <AD08> { [ i, I, equal        ] };
 		key <AD09> { [ o, O, at           ] };
-		key <AD10> { [ p, P               ] };
+		key <AD10> { [ p, P, quotedbl     ] };
 
 		key <AD11> { [ bracketleft, braceleft ] };
 		key <AD12> { [ bracketright, braceright ] };
@@ -281,7 +281,7 @@ xkb_keymap {
 		key <AC09> { [ l, L, bracketright ] };
 		key <AC10> { [ semicolon, colon, braceright ] };
 
-		key <AC11> { [ apostrophe, quotedbl ] };
+		key <AC11> { [ Control_R ] };
 
 		key <RTRN> { [ Return ] };
 
@@ -294,7 +294,7 @@ xkb_keymap {
 		key <AB07> { [ m, M, underscore   ] };
 		key <AB08> { [ comma, less        ] };
 		key <AB09> { [ period, greater    ] };
-		key <AB10> { [ slash, question    ] };
+		key <AB10> { [ slash, question, apostrophe ] };
 
 		key <CAPS> { [ BackSpace, BackSpace, Escape, Escape ] };
 
@@ -349,9 +349,9 @@ xkb_keymap {
 		key <LALT> { [       Alt_L ] };
 
 		key <RALT> { [ Mode_switch ] };
-		key <COMP> { [   Control_R ] };
+		key <COMP> { [       Alt_R ] };
 		key <RWIN> { [     Super_R ] };
-		key <RCTL> { [       Alt_R ] };
+		key <RCTL> { [   Control_R ] };
 
 		key <NMLK> { [    Num_Lock ] };
 		key <SCLK> { [ Scroll_Lock ] };
