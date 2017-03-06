@@ -112,6 +112,7 @@ xkb_keymap {
 		<LWIN> = 133;
 		<RWIN> = 134;
 		<COMP> = 135;
+		<META> = 205;
 		<I232> = 232;
 		<I233> = 233;
 		indicator 1 = "LED1";
@@ -356,9 +357,12 @@ xkb_keymap {
 		key <NMLK> { [    Num_Lock ] };
 		key <SCLK> { [ Scroll_Lock ] };
 
+		key <META> { [ Meta_L ] };
+
+		modifier_map Control { <LCTL>, <COMP> };
 		modifier_map Shift { <LFSH>, <RTSH> };
-		modifier_map Mod1  { <LALT>, <RCTL> };
-		modifier_map Mod5  { <RALT> };
+		modifier_map Mod1 { <LALT>, <RCTL>, <META> };
+		modifier_map Mod5 { <RALT> };
 	};
 
 };
