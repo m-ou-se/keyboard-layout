@@ -282,7 +282,7 @@ xkb_keymap {
 		key <AC09> { [ l, L, bracketright ] };
 		key <AC10> { [ semicolon, colon, braceright ] };
 
-		key <AC11> { [ Control_R ] };
+		key <AC11> { [ apostrophe, quotedbl ] };
 
 		key <RTRN> { [ Return ] };
 
