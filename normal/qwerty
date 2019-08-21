@@ -86,6 +86,7 @@ xkb_keymap {
 		<KP3> = 89;
 		<KP0> = 90;
 		<KPDL> = 91;
+		<LTGT> = 94;
 		<FK11> = 95;
 		<FK12> = 96;
 		<KPEN> = 104;
@@ -353,6 +354,7 @@ xkb_keymap {
 		key <COMP> { [       Alt_R ] };
 		key <RWIN> { [     Super_R ] };
 		key <RCTL> { [   Control_R ] };
+		key <LTGT> { [   Control_R ] };
 
 		key <NMLK> { [    Num_Lock ] };
 		key <SCLK> { [ Scroll_Lock ] };
