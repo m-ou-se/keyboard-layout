@@ -107,6 +107,9 @@ xkb_keymap {
 		<MUTE> = 121;
 		<VOL-> = 122;
 		<VOL+> = 123;
+		<APLY> = 172;
+		<ANXT> = 171;
+		<APRV> = 173;
 		<POWR> = 124;
 		<KPEQ> = 125;
 		<PAUS> = 127;
@@ -337,6 +340,9 @@ xkb_keymap {
 		key <MUTE> { [ XF86AudioMute        ] };
 		key <VOL-> { [ XF86AudioLowerVolume ] };
 		key <VOL+> { [ XF86AudioRaiseVolume ] };
+		key <APLY> { [ XF86AudioPlay ] };
+		key <APRV> { [ XF86AudioPrev ] };
+		key <ANXT> { [ XF86AudioNext ] };
 
 		key <POWR> { [ XF86PowerOff ] };
 
